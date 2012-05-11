@@ -5,8 +5,10 @@ Twenty Thousand Leagues Under the Sea is a classic science fiction novel by Fren
 (http://upload.wikimedia.org/wikipedia/commons/4/4e/20000_title_0a.jpg)
 
  - [Wikipedia entry] (http://en.wikipedia.org/wiki/Twenty_Thousand_Leagues_Under_the_Sea)
+ 
+ ***
 
-## Excerpt
+### Excerpt
 
 Part One
 Chapter I: A Shifting Reef
