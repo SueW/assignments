@@ -28,9 +28,9 @@ var_dump($_POST);
 			<option value=sub>*</option>
 			<option value=div>/</option>
 		</select>
-							
-		<button type="submit">Submit</button>
-		</form>
+		
+		<button type="calculate">Calculate</button>
+		
 	<?php else : ?>
 	
 	
