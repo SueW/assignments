@@ -20,7 +20,21 @@ var_dump($_POST);
 		<label for="number">Number 2</label>
 		<input type="number" name="number" min="1"/>
 		
-
+	
+		<label for="function">Function</label>
+		<select id="function" name="function">
+			<option value=add>+</option>
+			<option value=sub>-</option>
+			<option value=sub>*</option>
+			<option value=div>/</option>
+		</select>
+							
+		<button type="submit">Submit</button>
+		</form>
+	<?php else : ?>
+	
+	
+	<?php endif; ?>
 
 
 </body>
