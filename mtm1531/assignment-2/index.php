@@ -9,6 +9,30 @@ if (isset ($_POST['number1'])) {
 	$number1 = $_POST['number1'];
 }
 
+if (isset ($_POST['number2'])) {
+	$number2 = $_POST['number2'];
+}
+
+if (isset ($_POST['function'])) {
+	$function = $_POST['function'];
+}
+
+switch ($function) {
+    case 'add':
+        echo "i equals 0";
+        break;
+    case 'sub':
+        echo "i equals 1";
+        break;
+    case 'mul':
+        echo "i equals 2";
+        break;
+	case 'div':
+        echo "i equals 2";
+        break;
+}
+
+
 ?><!DOCTYPE HTML>
 <html>
 	<head>
