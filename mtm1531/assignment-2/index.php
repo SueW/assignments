@@ -19,21 +19,24 @@ if (isset ($_POST['function'])) {
 
 switch ($function) {
     case 'add':
-        echo "i equals 0";
+        $value = $number1 + $number2;
         break;
     case 'sub':
-        echo "i equals 1";
+         $value = $number1 - $number2;
         break;
     case 'mul':
-        echo "i equals 2";
+         $value = $number1 * $number2;
         break;
 	case 'div':
-        echo "i equals 2";
+         $value = $number1 / $number2;
         break;
 }
 
+$total = $value * 1.13;
 
-?><!DOCTYPE HTML>
+?>
+
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -61,8 +64,7 @@ switch ($function) {
 		
 		<button type="calculate">Calculate</button>
 		
-	<p>$<?php
-		echo number_format($total, 2); ?> </p>
+	<p>$<?php echo number_format($total, 2); ?> </p>
 
 </body>
 </html>
