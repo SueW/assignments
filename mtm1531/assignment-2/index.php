@@ -46,6 +46,8 @@ $total = $value * 1.13;
 
 <body>
 
+	<h1>Canadian Money Calculator</h1>
+
 	<form method="post" action="index.php">
 	
 		<label for="number1">Number 1</label>
@@ -65,7 +67,7 @@ $total = $value * 1.13;
 		
 		<button type="calculate">Calculate</button>
 		
-	<p>$<?php echo number_format($total, 2); ?> </p>
+	<p>Total with tax: $<?php echo number_format($total, 2); ?> </p>
 
 </body>
 </html>
