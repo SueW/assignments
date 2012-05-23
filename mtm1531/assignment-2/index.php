@@ -41,6 +41,7 @@ $total = $value * 1.13;
 	<head>
 		<meta charset="utf-8">
 		<title>Money Calculator Form</title>
+		<link rel="stylesheet" href="css/general.css">
 	</head>
 
 <body>
