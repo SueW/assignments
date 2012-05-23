@@ -1,3 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 
+html {
+	background-color:#CEC6BD;
+}
+
+body {
+	font: normal 100%/1.5 Verdana, Geneva, sans-serif;
+	text-align: center;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+	
