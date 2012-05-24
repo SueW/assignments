@@ -14,4 +14,9 @@ document.getElementById('add').addEventListener('click', newItem, false);
 
 document.documentElement.addEventListener('click', function(ev) {
 	
+	if (ev.target.tagName == 'LI') {
+	ev.target.className = 'done';
+	list = ev.target;
+	}
+}, false);
 	
