@@ -1,5 +1,9 @@
+
+li {
+	cursor: pointer;
+}
+
 .done {
 	color: #999;
 	text-decoration: line-through;
-	font-family:Verdana, Geneva, sans-serif;
 }
