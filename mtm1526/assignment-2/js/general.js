@@ -9,4 +9,9 @@ var newItem = function (ev) {
 	list.innerHTML=document.getElementById('item').value;
 	
 };
+
+document.getElementById('add').addEventListener('click', newItem, false);
+
+document.documentElement.addEventListener('click', function(ev) {
+	
 	
