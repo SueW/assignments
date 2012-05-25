@@ -1,3 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
 
+.circle{
+	display: block;
+    height: 400px;
+    width: 400px;
+    line-height: 400px;
+
+    -moz-border-radius: 250px;
+    border-radius: 250px;
+	
+	border: solid #000 6px;
+    background-color:#96F;
+    color:#000;
+    text-align: center;
+    font-size: 18em;
+	
+	margin-top:0.25em;
+}
+
+
+	
