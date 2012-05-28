@@ -4,3 +4,9 @@ FROM movies
 WHERE ID = 3
 
 2.
+SELECT name, release_date
+FROM movies
+WHERE id < 4
+ORDER BY name ASC
+
+3.
