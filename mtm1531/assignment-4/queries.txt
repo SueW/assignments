@@ -1,0 +1,6 @@
+1.
+SELECT name, release_date, director, motion_picture_rating
+FROM movies
+WHERE ID = 3
+
+2.
