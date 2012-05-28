@@ -23,3 +23,5 @@ WHERE id = 5
 INSERT INTO `wood0022`.`movies` (`id`, `name`, `release_date`, `director`, `motion_picture_rating`) VALUES (NULL, 'The Princess Bride', '1987-09-25', 'Rob Reiner', 'PG');
 
 6.
+DELETE FROM movies
+WHERE id = 6
