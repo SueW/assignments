@@ -15,3 +15,8 @@ FROM movies
 ORDER BY release_date ASC
 
 4.
+UPDATE movies
+SET name = 'Top Gun', director = 'Tony Scott'
+WHERE id = 5
+
+5.
