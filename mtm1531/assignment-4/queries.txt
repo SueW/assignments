@@ -10,3 +10,8 @@ WHERE id < 4
 ORDER BY name ASC
 
 3.
+SELECT name, director
+FROM movies
+ORDER BY release_date ASC
+
+4.
