@@ -48,6 +48,17 @@ require_once 'includes/form-processor.php';
 			<label for ="french">Spanish</label>
 		</fieldset>
 		
+		<div>
+			<label for="notes">Notes<?php if (isset($errors['notes'])) : endif; ?></label>
+			<textarea id="notes" name="notes"><?php echo $notes; ?></textarea>
+		</div>
+		
+		
+		<div>
+			<input type="checkbox" id="acceptterms" name="acceptterms" value="1"<?php if (isset($POST['acceptterms'])) {echo 'checked';} ?>>
+			<label for="acceptterms">Accept terms?<?php if (isset($errors['acceptterms'])) : ?><strong class="error"> You must accept our terms to continue.</strong><?php endif; ?></label>
+		</div>
+		
 		
 					
 	</form>
