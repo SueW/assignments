@@ -59,7 +59,9 @@ require_once 'includes/form-processor.php';
 			<label for="acceptterms">Accept terms?<?php if (isset($errors['acceptterms'])) : ?><strong class="error"> You must accept our terms to continue.</strong><?php endif; ?></label>
 		</div>
 		
-		
+		<div>
+		<button type="submit">Register</button>
+		</div>
 					
 	</form>
 	
