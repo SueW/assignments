@@ -70,7 +70,7 @@ require_once 'includes/form-processor.php';
 					
 	</form>
 	
-<?php endif; ?>
+
 	
 
 </body>
