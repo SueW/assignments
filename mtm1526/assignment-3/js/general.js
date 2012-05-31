@@ -9,11 +9,11 @@ jQuery(function ($) {
 		e.preventDefault();
 
 		if (color) {
-			$general.css($property.val(), color);
+			$circle.css($property.val(), color);
 		}
 	});
 	
 	$('#hide-show').on('click', function (e) {
-		$ball.toggle(500);
+		$circle.toggle('slow');
 	});	
 });
