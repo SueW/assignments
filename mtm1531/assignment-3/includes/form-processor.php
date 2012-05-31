@@ -33,16 +33,15 @@ if ($_SERVER['REQUEST_METHOD'] =='POST') {
 	
 	if (!in_array($preferredlang, array('english','french','spanish')))
 		$errors['preferredlang'] = true;
-	
-	
+
 	
 	if (!isset($_POST['acceptterms']))
 		$errors['acceptterms'] = true;
 		
 			
 	if (empty($errors)) 
-		$headers = 'From: ' . $name . ' <' . $email . '>';
-		mail('susanwoodford17@gmail.com', $prefferredlang, $notes, $headers);
+		//$headers = 'From: ' . $name . ' <' . $email . '>';
+		mail($email, $preferredlang,"Thanks for registering", "From: susanwoodford17@gmail.com");
 	
 	}
 }
