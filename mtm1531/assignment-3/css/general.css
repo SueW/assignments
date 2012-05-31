@@ -9,3 +9,11 @@ label {
 	color:#f33;
 }
 
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	margin: 5% 25% 0 25%;
+	padding: 1em;
+	background-color: #D2C4A2;
+	border: solid #000 2px;
+	
+}
