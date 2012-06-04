@@ -16,6 +16,7 @@ $results = $sql->fetchAll();
 	<head>
 		<meta charset="utf-8">
 		<title>Top Flicks from the 80s</title>
+		<link href="css/general.css" rel="stylesheet" >
 	</head>
 	
 	<body>
