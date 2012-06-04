@@ -25,6 +25,7 @@ $results = $sql->fetch();
 	<head>
 		<meta charset="utf-8">
 		<title><?php echo $results['name']; ?> &middot;Movies</title>
+		<link href="css/general.css" rel="stylesheet" >
 	</head>
 	
 	<body>
@@ -32,11 +33,11 @@ $results = $sql->fetch();
 	
 	<h1><?php echo $results['name']; ?></h1>
 	<dl>
-		<dt>Release Date</dt>
+		<dt>Release Date:</dt>
 			<dd><?php echo $results['release_date']; ?></dd>
-			<dt>Director</dt>
+			<dt>Director:</dt>
 			<dd><?php echo $results['director']; ?></dd>
-			<dt>Motion Picture Rating</dt>
+			<dt>Motion Picture Rating:</dt>
 			<dd><?php echo $results['motion_picture_rating']; ?></dd>
 	</dl>
 	

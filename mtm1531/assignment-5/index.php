@@ -20,17 +20,19 @@ $results = $sql->fetchAll();
 	</head>
 	
 	<body>
+		<h1>Top Flicks from the 80s</h1>
+			<p>(The best era EVER)</p>
 		
 		<?php foreach ($results as $flicks) : ?> 
 		<h2>
 			<a href="single.php?id=<?php echo $flicks['id']; ?>">
 				 <?php echo $flicks['name'] ?></a></h2>
 		<dl>
-			<dt>Release Date</dt>
+			<dt>Release Date:</dt>
 			<dd><?php echo $flicks['release_date']; ?></dd>
-			<dt>Director</dt>
+			<dt>Director:</dt>
 			<dd><?php echo $flicks['director']; ?></dd>
-			<dt>Motion Picture Rating</dt>
+			<dt>Motion Picture Rating:</dt>
 			<dd><?php echo $flicks['motion_picture_rating']; ?></dd>
 		</dl>
 		<?php endforeach; ?>
