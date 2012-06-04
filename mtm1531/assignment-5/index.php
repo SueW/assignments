@@ -29,7 +29,7 @@ $results = $sql->fetchAll();
 			<dd><?php echo $flicks['release_date']; ?></dd>
 			<dt>Director</dt>
 			<dd><?php echo $flicks['director']; ?></dd>
-			dt>Motion Picture Rating</dt>
+			<dt>Motion Picture Rating</dt>
 			<dd><?php echo $flicks['motion_picture_rating']; ?></dd>
 		</dl>
 		<?php endforeach; ?>
