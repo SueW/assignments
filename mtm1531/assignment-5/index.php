@@ -21,7 +21,7 @@ $results = $sql->fetchAll();
 	
 	<body>
 		<h1>Top Flicks from the 80s</h1>
-			<p>(The best era EVER)</p>
+			<p>...the best era EVER</p>
 		
 		<?php foreach ($results as $flicks) : ?> 
 		<h2>
