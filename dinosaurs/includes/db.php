@@ -5,7 +5,7 @@
 
 $user = getenv('DB_USER'); //The MySQL username
 $pass = getenv('DB_PASS'); // The MySQL password
-$data_source = getenv('DATA_SOURCE')
+$data_source = getenv('DATA_SOURCE');
 
 // PDO: PHP Data Objects
 // Allows us to connect to many different kinds of databases
