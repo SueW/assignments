@@ -2,7 +2,7 @@
 /* CSS Document */
 
 html {
-	background-color: #729DAD;
+	background-color: #FFF;
 	font: normal 100%/1.5 Verdana, Geneva, sans-serif;
 	color:#000;
 	
@@ -10,7 +10,9 @@ html {
 
 body {
 	margin: 0 auto;
-	width: 35em;
+	width: 45em;
+	background-image:url(../images/film3.png);
+	padding: 0.5em;
 }
 
 p {
