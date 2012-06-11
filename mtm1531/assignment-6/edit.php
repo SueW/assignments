@@ -6,9 +6,9 @@ $errors = array();
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-$release_date = filter_input(INPUT_POST, 'release_date', FILTER_SANITIZE_NUMBER_STRING);
-$director = filter_input(INPUT_POST, 'director', FILTER_SANITIZE_NUMBER_STRING);
-$motion_picture_rating = filter_input(INPUT_POST, 'motion_picture_rating', FILTER_SANITIZE_NUMBER_STRING);
+$release_date = filter_input(INPUT_POST, 'release_date', FILTER_SANITIZE_STRING);
+$director = filter_input(INPUT_POST, 'director', FILTER_SANITIZE_STRING);
+$motion_picture_rating = filter_input(INPUT_POST, 'motion_picture_rating', FILTER_SANITIZE_STRING);
 
 
 if ($_SERVER['REQUEST_METHOD'] =='POST'){
@@ -94,7 +94,7 @@ $motion_picture_rating = $results['motion_picture_rating'];
 			<input id="name" name="name" required value="<?php echo $name; ?>">
 		</div>
 		
-		div>
+		<div>
 			<label for="release_date">
 			Release Date
 			<?php if (isset($errors['release_date'])) : ?>
@@ -103,7 +103,7 @@ $motion_picture_rating = $results['motion_picture_rating'];
 			<input id="release_date" name="release_date" required value="<?php echo $release_date; ?>">
 		</div>
 		
-			div>
+		<div>
 			<label for="director">
 			Director's Name
 			<?php if (isset($errors['director'])) : ?>
@@ -112,7 +112,7 @@ $motion_picture_rating = $results['motion_picture_rating'];
 			<input id="director" name="director" required value="<?php echo $director; ?>">
 		</div>
 		
-			div>
+		<div>
 			<label for="motion_picture_rating">
 			Motion Picture Rating
 			<?php if (isset($errors['motion_picture_rating'])) : ?>
