@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] =='POST'){
 		$errors['name'] = true;
 	}
 
-	if (strlen($release_date) < 1 || strlen($release_date) > 60){
+	if (strlen($release_date) < 1 || strlen($release_date) > 12){
 		$errors['release_date'] = true;
 	}
 	
