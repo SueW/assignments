@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background-color: #e3e6f5;
+	font: normal 100%/1.5 Verdana, Geneva, sans-serif;
+	color:#000;
+	
+}
+
+body {
+	margin: 0 auto;
+	width: 45em;
+	background-image:url(../images/film3.png);
+	padding: 0.5em;
+}
+
+p {
+	margin-top: -1.5em;
+	color: #333;
+	margin-left: 16em;
+	font-style:italic;
+}
+
+dt {
+	float:left;
+	padding-right: 5px;
+	font-weight:bold;
+}
+
