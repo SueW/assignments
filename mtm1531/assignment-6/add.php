@@ -3,9 +3,9 @@
 $errors = array();
 
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-$release_date = filter_input(INPUT_POST, 'release_date', FILTER_SANITIZE_NUMBER_STRING);
-$director = filter_input(INPUT_POST, 'director', FILTER_SANITIZE_NUMBER_STRING);
-$motion_picture_rating = filter_input(INPUT_POST, 'motion_picture_rating', FILTER_SANITIZE_NUMBER_STRING);
+$release_date = filter_input(INPUT_POST, 'release_date', FILTER_SANITIZE_STRING);
+$director = filter_input(INPUT_POST, 'director', FILTER_SANITIZE_STRING);
+$motion_picture_rating = filter_input(INPUT_POST, 'motion_picture_rating', FILTER_SANITIZE_STRING);
 
 
 if ($_SERVER['REQUEST_METHOD'] =='POST'){
