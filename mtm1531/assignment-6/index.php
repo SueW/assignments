@@ -20,6 +20,9 @@ $results = $sql->fetchAll();
 	</head>
 	
 	<body>
+	
+		<a href="add.php">Add a Movie</a>
+		
 		<h1>Top Flicks from the 80s</h1>
 			<p>...the best era EVER</p>
 		
