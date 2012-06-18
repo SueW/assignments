@@ -78,6 +78,7 @@ $motion_picture_rating = $results['motion_picture_rating'];
 <head>
 	<meta charset="utf-8">
 	<title>Edit Movies</title>
+	<link href="css/general.css" rel="stylesheet" >
 </head>
 <body>
 	
