@@ -1,6 +1,7 @@
 $(document).ready(function () {
 	
 	var userAvailable = $('.user-available');
+	var emailAvailable = $('.email-available');
 	
 	$('#username').on('change', function (ev){
 		var username = $(this).val();
@@ -85,4 +86,37 @@ $(document).ready(function () {
 		
 		
 });
+
+$('#email').on('change', function (ev){
+		var email = $(this).val();
+		
+		emailAvailable.attr('data-status', 'unchecked');
+		
+			var ajax = $.post('check-email.php', {
+				'email' : email
+			});
+			
+			ajax.done(function (data) {
+				if (data == 'available'){
+					emailAvailable
+						.attr('data-status', 'available')
+				        .html('Available')
+						;
+					
+			} else {
+				emailAvailable
+					.attr('data-status', 'unavailable')
+					.html('Unavailable')
+				
+				;	
+		}
+	});
+	
+	} else {
+	 		emailAvailable
+			.attr('data-status', 'unavailable')
+			.html('Unavailable')
+			;
+	 	}
+	});
 

@@ -1,28 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
 
-.user-available {
+.user-available, email-available{
 	font-size: 1.125em;
 }
 
-.user-available:before {
+.user-available:before, email-available:before {
 	content: "✔";
 	
 }
 
-.user-available[data-status="unchecked"] {
+.user-available[data-status="unchecked"], .email-available[data-status="unchecked"] {
 	display: none;
 }
 
-.user-available[data-status="available"] {
+.user-available[data-status="available"], .email-available[data-status="available"] {
 	color: #090;
 }
 
-.user-available[data-status="unavailable"] {
+.user-available[data-status="unavailable"], .email-available[data-status="unavailable"] {
 	color: #f33;
 }
 
-.user-available[data-status="unavailable"]:before {
+.user-available[data-status="unavailable"]:before, .email-available[data-status="unavailable"]:before {
 	content:"✖"
 }
 
