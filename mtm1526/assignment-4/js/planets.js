@@ -1,20 +1,31 @@
 $(document).ready(function() {
 	
-	$.get('auto-load.html', function (data) {
-		$('body').prepend(data);
+	$('.container').load('earth.html');
+	
+	$('#earth').on('click', function () {
+		$('.container').load('earth.html');
+		$('nav li').removeClass('current');
+		$('#earth').addClass('current');
 	});
 	
-	
-	$('#gethtml').on('click', function () {
-		$('#fillme').load('load-me.html');
+	$('#mars').on('click', function () {
+		$('.container').load('mars.html');
+		$('nav li').removeClass('current');
+		$('#mars').addClass('current');
 	});
 	
-	$('#sendme').on('change', function() {
-		$.post('save.php', {
-			sendme : $('#sendme').val()
-		
-		});
+	$('#jupiter').on('click', function () {
+		$('.container').load('jupiter.html');
+		$('nav li').removeClass('current');
+		$('#jupiter').addClass('current');
 	});
+	
+	$('#venus').on('click', function () {
+		$('.container').load('venus.html');
+		$('nav li').removeClass('current');
+		$('#venus').addClass('current');
+	});
+	
 	
 	
 	
