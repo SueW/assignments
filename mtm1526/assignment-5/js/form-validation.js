@@ -2,6 +2,8 @@ $(document).ready(function () {
 	
 	var userAvailable = $('.user-available');
 	var emailAvailable = $('.email-available');
+	var cityAvailable = $('.city-available');
+	
 	
 	$('#username').on('change', function (ev){
 		var username = $(this).val();
@@ -20,22 +22,15 @@ $(document).ready(function () {
 				        .html('Available')
 						;
 					
-			} else {
-				userAvailable
-					.attr('data-status', 'unavailable')
-					.html('Unavailable')
-				
-				;	
+				} else {
+					userAvailable
+						.attr('data-status', 'unavailable')
+						.html('Unavailable');	
+				};
+			});
 		}
 	});
-	
-	} else {
-	 		userAvailable
-			.attr('data-status', 'unavailable')
-			.html('Unavailable')
-			;
-	 	}
-	});
+
 
 	$('#password').on('keyup', function (ev) {
 		var password = $(this).val();
@@ -74,6 +69,79 @@ $(document).ready(function () {
 		
 	});
 	
+
+	$('#email').on('change', function (ev){
+		var email = $(this).val();
+		
+		emailAvailable.attr('data-status', 'unchecked');
+		
+			var ajax = $.post('check-email.php', {
+				'email' : email
+			});
+			
+		ajax.done(function (data) {
+			if (data == 'available'){
+				emailAvailable
+					.attr('data-status', 'available')
+					.html('Available')
+					;
+					
+			} else {
+				emailAvailable
+					.attr('data-status', 'unavailable')
+					.html('Unavailable')
+				
+				;	
+			};
+		});
+	});
+
+
+
+	$('#city').on('change', function (ev){
+		var city = $(this).val();
+		
+		cityAvailable.attr('data-status', 'unchecked');
+		
+		if(city.match(/[^a-zA-z]/)) {
+			cityAvailable
+				.attr('data-status', 'unavailable')
+				.html('Unavailable');	
+			
+		}else{
+			cityAvailable
+				.attr('data-status', 'available')
+				.html('Available')
+				;
+			
+		}
+	});
+	
+	var countryCa, countryUs;
+	
+	$('[name="country"]').on('change', function (ev){
+		var country = $(this).val();
+		console.log(country)
+		if(country=='us') {
+			if(!countryUs){
+				$('.country-choice').load ('us.html', function(data){
+					countryUs=data;
+				});
+			}else{
+				$('.country-choice').html(countryUs);
+			}
+		}else{
+			if(!countryCa){
+				$('.country-choice').load ('canada.html', function(data){
+					countryCa=data;
+				});
+			}else{
+				$('.country-choice').html(countryCa);
+			}
+		}
+	});
+					
+	
 	$('form').on('submit', function(ev) {
 		if (
 			userAvailable.attr('data-status')== 'unchecked'
@@ -83,33 +151,4 @@ $(document).ready(function () {
 			ev.preventDefault();
 		}
 	});
-		
-		
-});
-
-$('#email').on('change', function (ev){
-		var email = $(this).val();
-		
-		emailAvailable.attr('data-status', 'unchecked');
-		
-			var ajax = $.post('check-email.php', {
-				'email' : email
-			});
-			
-			ajax.done(function (data) {
-				if (data == 'available'){
-					emailAvailable
-						.attr('data-status', 'available')
-				        .html('Available')
-						;
-					
-			} else {
-				emailAvailable
-					.attr('data-status', 'unavailable')
-					.html('Unavailable')
-				
-				;	
-		}
-	});
-
 });

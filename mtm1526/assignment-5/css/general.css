@@ -1,28 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
 
-.user-available, email-available{
+.user-available, .email-available, .city-available {
 	font-size: 1.125em;
 }
 
-.user-available:before, email-available:before {
+.user-available:before, .email-available:before, .city-available:before{
 	content: "✔";
 	
 }
 
-.user-available[data-status="unchecked"], .email-available[data-status="unchecked"] {
+.user-available[data-status="unchecked"], .email-available[data-status="unchecked"], .city-available[data-status="unchecked"] {
 	display: none;
 }
 
-.user-available[data-status="available"], .email-available[data-status="available"] {
+.user-available[data-status="available"], .email-available[data-status="available"], .city-available[data-status="available"] {
 	color: #090;
 }
 
-.user-available[data-status="unavailable"], .email-available[data-status="unavailable"] {
+.user-available[data-status="unavailable"], .email-available[data-status="unavailable"], .city-available[data-status="unavailable"] {
 	color: #f33;
 }
 
-.user-available[data-status="unavailable"]:before, .email-available[data-status="unavailable"]:before {
+.user-available[data-status="unavailable"]:before, .email-available[data-status="unavailable"]:before, .city-available[data-status="unavailable"]:before {
 	content:"✖"
 }
 
