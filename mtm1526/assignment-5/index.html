@@ -35,7 +35,25 @@
 			<strong class="email-available" data-status="unchecked">Available</strong>
 		</div>
 		
+		<div>
+			<label for="city">City</label>
+			<input type="city" name="city" required>
+			<strong class="city-available" data-status="unchecked"></strong>
+		</div>
+		
+		<fieldset>
+			<legend>Country:</legend>
 			
+			<input type="radio" id="Canada" name="country" value="canada">
+			<label for ="Canada">Canada</label>
+			
+			<input type="radio" id="US" name="country" value="us">
+			<label for ="US">US</label>
+			
+		</fieldset>
+		
+		<div class="country-choice"></div>	
+		
 		
 		<button type="submit">Submit</button>
 	</form>

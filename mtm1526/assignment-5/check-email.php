@@ -2,7 +2,7 @@
 
 require_once 'includes/db.php';
 
-$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
+$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 
 $sql = $db->prepare('
 SELECT id

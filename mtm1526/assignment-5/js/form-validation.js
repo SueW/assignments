@@ -111,12 +111,5 @@ $('#email').on('change', function (ev){
 				;	
 		}
 	});
-	
-	} else {
-	 		emailAvailable
-			.attr('data-status', 'unavailable')
-			.html('Unavailable')
-			;
-	 	}
-	});
 
+});
