@@ -1,6 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 
+html {
+	background-color:#CCC;
+	font: normal 100%/1.5 sans-serif;
+}
+
+body {
+	margin: 0 auto;
+	padding-top: 1em;
+	width: 30em;
+}
+
 .user-available, .email-available, .city-available {
 	font-size: 1.125em;
 }
@@ -41,3 +52,6 @@
 	content: "✔";
 }
 
+.require {
+	padding-top:1em;
+}
